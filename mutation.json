@@ -1,0 +1,1012 @@
+{
+  "mutants": [
+    {
+      "elapsed": 0.088,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:13:**\u2192*",
+      "line": 13,
+      "mutant": "*",
+      "original": "**",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.074,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:15:0\u21921",
+      "line": 15,
+      "mutant": "1",
+      "original": "0",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.059,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:18:*\u2192//",
+      "line": 18,
+      "mutant": "//",
+      "original": "*",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.059,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:19:*\u2192//",
+      "line": 19,
+      "mutant": "//",
+      "original": "*",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.057,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:20:-\u2192+",
+      "line": 20,
+      "mutant": "+",
+      "original": "-",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.055,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:20:*\u2192//",
+      "line": 20,
+      "mutant": "//",
+      "original": "*",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.058,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:25:<=\u2192<",
+      "line": 25,
+      "mutant": "<",
+      "original": "<=",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.082,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:25:0\u21921",
+      "line": 25,
+      "mutant": "1",
+      "original": "0",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.076,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:28:2\u21923",
+      "line": 28,
+      "mutant": "3",
+      "original": "2",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.062,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:28:2\u21921",
+      "line": 28,
+      "mutant": "1",
+      "original": "2",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.055,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:28:*\u2192//",
+      "line": 28,
+      "mutant": "//",
+      "original": "*",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.057,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:29:>\u2192>=",
+      "line": 29,
+      "mutant": ">=",
+      "original": ">",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.061,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:29:or\u2192and",
+      "line": 29,
+      "mutant": "and",
+      "original": "or",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.059,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:29:==\u2192!=",
+      "line": 29,
+      "mutant": "!=",
+      "original": "==",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.058,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:29:and\u2192or",
+      "line": 29,
+      "mutant": "or",
+      "original": "and",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.056,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:29:1\u21922",
+      "line": 29,
+      "mutant": "2",
+      "original": "1",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.056,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:29:1\u21920",
+      "line": 29,
+      "mutant": "0",
+      "original": "1",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.059,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:30:1\u21922",
+      "line": 30,
+      "mutant": "2",
+      "original": "1",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.057,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:30:1\u21920",
+      "line": 30,
+      "mutant": "0",
+      "original": "1",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.056,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:38:or\u2192and",
+      "line": 38,
+      "mutant": "and",
+      "original": "or",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.055,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:39:1\u21922",
+      "line": 39,
+      "mutant": "2",
+      "original": "1",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.055,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:39:1\u21920",
+      "line": 39,
+      "mutant": "0",
+      "original": "1",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.056,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:41:1\u21922",
+      "line": 41,
+      "mutant": "2",
+      "original": "1",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.057,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:41:1\u21920",
+      "line": 41,
+      "mutant": "0",
+      "original": "1",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.056,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:44:>\u2192>=",
+      "line": 44,
+      "mutant": ">=",
+      "original": ">",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.055,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:46:not\u2192",
+      "line": 46,
+      "mutant": "",
+      "original": "not",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.055,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:46:+\u2192-",
+      "line": 46,
+      "mutant": "-",
+      "original": "+",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.058,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:46:and\u2192or",
+      "line": 46,
+      "mutant": "or",
+      "original": "and",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.058,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:46:+\u2192-",
+      "line": 46,
+      "mutant": "-",
+      "original": "+",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.058,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:46:!=\u2192==",
+      "line": 46,
+      "mutant": "==",
+      "original": "!=",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.056,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:48:or\u2192and",
+      "line": 48,
+      "mutant": "and",
+      "original": "or",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.058,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:48:*\u2192//",
+      "line": 48,
+      "mutant": "//",
+      "original": "*",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.059,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:48:+\u2192-",
+      "line": 48,
+      "mutant": "-",
+      "original": "+",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.055,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:48:+\u2192-",
+      "line": 48,
+      "mutant": "-",
+      "original": "+",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.055,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:48:*\u2192//",
+      "line": 48,
+      "mutant": "//",
+      "original": "*",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.066,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:48:or\u2192and",
+      "line": 48,
+      "mutant": "and",
+      "original": "or",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.059,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:49:-\u2192+",
+      "line": 49,
+      "mutant": "+",
+      "original": "-",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.063,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:53:*\u2192//",
+      "line": 53,
+      "mutant": "//",
+      "original": "*",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.058,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:58:*\u2192//",
+      "line": 58,
+      "mutant": "//",
+      "original": "*",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.06,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:58://\u2192*",
+      "line": 58,
+      "mutant": "*",
+      "original": "//",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.064,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:61:4\u21925",
+      "line": 61,
+      "mutant": "5",
+      "original": "4",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.063,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:61:4\u21923",
+      "line": 61,
+      "mutant": "3",
+      "original": "4",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.061,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:62:<\u2192<=",
+      "line": 62,
+      "mutant": "<=",
+      "original": "<",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.056,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:62:0\u21921",
+      "line": 62,
+      "mutant": "1",
+      "original": "0",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.08,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:63:-\u2192+",
+      "line": 63,
+      "mutant": "+",
+      "original": "-",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.085,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:66:<\u2192<=",
+      "line": 66,
+      "mutant": "<=",
+      "original": "<",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.069,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:67:-\u2192+",
+      "line": 67,
+      "mutant": "+",
+      "original": "-",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.059,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:67:-\u2192+",
+      "line": 67,
+      "mutant": "+",
+      "original": "-",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.06,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:68:+\u2192-",
+      "line": 68,
+      "mutant": "-",
+      "original": "+",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.058,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:73://\u2192*",
+      "line": 73,
+      "mutant": "*",
+      "original": "//",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.062,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:77:<\u2192<=",
+      "line": 77,
+      "mutant": "<=",
+      "original": "<",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.063,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:77:0\u21921",
+      "line": 77,
+      "mutant": "1",
+      "original": "0",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.085,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:77:!=\u2192==",
+      "line": 77,
+      "mutant": "==",
+      "original": "!=",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.077,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:77:<\u2192<=",
+      "line": 77,
+      "mutant": "<=",
+      "original": "<",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.062,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:77:0\u21921",
+      "line": 77,
+      "mutant": "1",
+      "original": "0",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.062,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:78:*\u2192//",
+      "line": 78,
+      "mutant": "//",
+      "original": "*",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.058,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:79:-\u2192+",
+      "line": 79,
+      "mutant": "+",
+      "original": "-",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.065,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:83:==\u2192!=",
+      "line": 83,
+      "mutant": "!=",
+      "original": "==",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.08,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:83:0\u21921",
+      "line": 83,
+      "mutant": "1",
+      "original": "0",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.065,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:85:<\u2192<=",
+      "line": 85,
+      "mutant": "<=",
+      "original": "<",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.064,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:85:0\u21921",
+      "line": 85,
+      "mutant": "1",
+      "original": "0",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.065,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:85:!=\u2192==",
+      "line": 85,
+      "mutant": "==",
+      "original": "!=",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.063,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:85:<\u2192<=",
+      "line": 85,
+      "mutant": "<=",
+      "original": "<",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.067,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:85:0\u21921",
+      "line": 85,
+      "mutant": "1",
+      "original": "0",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.063,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:86:*\u2192//",
+      "line": 86,
+      "mutant": "//",
+      "original": "*",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.068,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:87:-\u2192+",
+      "line": 87,
+      "mutant": "+",
+      "original": "-",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.069,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:92:<\u2192<=",
+      "line": 92,
+      "mutant": "<=",
+      "original": "<",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.062,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:94:>\u2192>=",
+      "line": 94,
+      "mutant": ">=",
+      "original": ">",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.054,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:99:*\u2192//",
+      "line": 99,
+      "mutant": "//",
+      "original": "*",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.063,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:103:not\u2192",
+      "line": 103,
+      "mutant": "",
+      "original": "not",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.069,
+      "file": "src/wad18.py",
+      "id": "src/wad18.py:105:True\u2192False",
+      "line": 105,
+      "mutant": "False",
+      "original": "True",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.062,
+      "file": "src/ledger.py",
+      "id": "src/ledger.py:25:0\u21921",
+      "line": 25,
+      "mutant": "1",
+      "original": "0",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.065,
+      "file": "src/ledger.py",
+      "id": "src/ledger.py:52:or\u2192and",
+      "line": 52,
+      "mutant": "and",
+      "original": "or",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.06,
+      "file": "src/ledger.py",
+      "id": "src/ledger.py:54:<\u2192<=",
+      "line": 54,
+      "mutant": "<=",
+      "original": "<",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.063,
+      "file": "src/ledger.py",
+      "id": "src/ledger.py:75:==\u2192!=",
+      "line": 75,
+      "mutant": "!=",
+      "original": "==",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.061,
+      "file": "src/ledger.py",
+      "id": "src/ledger.py:87:True\u2192False",
+      "line": 87,
+      "mutant": "False",
+      "original": "True",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.06,
+      "file": "src/ledger.py",
+      "id": "src/ledger.py:95:<=\u2192<",
+      "line": 95,
+      "mutant": "<",
+      "original": "<=",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.063,
+      "file": "src/ledger.py",
+      "id": "src/ledger.py:98:+\u2192-",
+      "line": 98,
+      "mutant": "-",
+      "original": "+",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.058,
+      "file": "src/ledger.py",
+      "id": "src/ledger.py:104:<=\u2192<",
+      "line": 104,
+      "mutant": "<",
+      "original": "<=",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.06,
+      "file": "src/ledger.py",
+      "id": "src/ledger.py:108:<\u2192<=",
+      "line": 108,
+      "mutant": "<=",
+      "original": "<",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.059,
+      "file": "src/ledger.py",
+      "id": "src/ledger.py:113:-\u2192+",
+      "line": 113,
+      "mutant": "+",
+      "original": "-",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.063,
+      "file": "src/ledger.py",
+      "id": "src/ledger.py:133:==\u2192!=",
+      "line": 133,
+      "mutant": "!=",
+      "original": "==",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.058,
+      "file": "src/ledger.py",
+      "id": "src/ledger.py:138:-\u2192+",
+      "line": 138,
+      "mutant": "+",
+      "original": "-",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.067,
+      "file": "src/ledger.py",
+      "id": "src/ledger.py:140:not\u2192",
+      "line": 140,
+      "mutant": "",
+      "original": "not",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.061,
+      "file": "src/trade.py",
+      "id": "src/trade.py:28:0\u21921",
+      "line": 28,
+      "mutant": "1",
+      "original": "0",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.065,
+      "file": "src/trade.py",
+      "id": "src/trade.py:44:<=\u2192<",
+      "line": 44,
+      "mutant": "<",
+      "original": "<=",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.062,
+      "file": "src/trade.py",
+      "id": "src/trade.py:46:<=\u2192<",
+      "line": 46,
+      "mutant": "<",
+      "original": "<=",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.06,
+      "file": "src/trade.py",
+      "id": "src/trade.py:48:==\u2192!=",
+      "line": 48,
+      "mutant": "!=",
+      "original": "==",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.057,
+      "file": "src/trade.py",
+      "id": "src/trade.py:108:==\u2192!=",
+      "line": 108,
+      "mutant": "!=",
+      "original": "==",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.057,
+      "file": "src/trade.py",
+      "id": "src/trade.py:111:or\u2192and",
+      "line": 111,
+      "mutant": "and",
+      "original": "or",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.059,
+      "file": "src/trade.py",
+      "id": "src/trade.py:122:True\u2192False",
+      "line": 122,
+      "mutant": "False",
+      "original": "True",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.064,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:30:0\u21921",
+      "line": 30,
+      "mutant": "1",
+      "original": "0",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.063,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:69:<\u2192<=",
+      "line": 69,
+      "mutant": "<=",
+      "original": "<",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.066,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:78:<\u2192<=",
+      "line": 78,
+      "mutant": "<=",
+      "original": "<",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.059,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:146:-\u2192+",
+      "line": 146,
+      "mutant": "+",
+      "original": "-",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.057,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:147:+\u2192-",
+      "line": 147,
+      "mutant": "-",
+      "original": "+",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.058,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:148:-\u2192+",
+      "line": 148,
+      "mutant": "+",
+      "original": "-",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.065,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:149:+\u2192-",
+      "line": 149,
+      "mutant": "-",
+      "original": "+",
+      "status": "KILLED"
+    },
+    {
+      "elapsed": 0.063,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:163:1\u21922",
+      "line": 163,
+      "mutant": "2",
+      "original": "1",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.06,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:163:1\u21920",
+      "line": 163,
+      "mutant": "0",
+      "original": "1",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.06,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:164:-\u2192+",
+      "line": 164,
+      "mutant": "+",
+      "original": "-",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.062,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:165:1\u21922",
+      "line": 165,
+      "mutant": "2",
+      "original": "1",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.061,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:165:1\u21920",
+      "line": 165,
+      "mutant": "0",
+      "original": "1",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.067,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:166:==\u2192!=",
+      "line": 166,
+      "mutant": "!=",
+      "original": "==",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.061,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:167:1\u21922",
+      "line": 167,
+      "mutant": "2",
+      "original": "1",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.059,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:167:1\u21920",
+      "line": 167,
+      "mutant": "0",
+      "original": "1",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.062,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:168:==\u2192!=",
+      "line": 168,
+      "mutant": "!=",
+      "original": "==",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.062,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:176:*\u2192//",
+      "line": 176,
+      "mutant": "//",
+      "original": "*",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.089,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:176://\u2192*",
+      "line": 176,
+      "mutant": "*",
+      "original": "//",
+      "status": "SURVIVED"
+    },
+    {
+      "elapsed": 0.064,
+      "file": "src/settlement_engine.py",
+      "id": "src/settlement_engine.py:179:True\u2192False",
+      "line": 179,
+      "mutant": "False",
+      "original": "True",
+      "status": "SURVIVED"
+    }
+  ],
+  "started_utc": "2026-11-02T20:22:05.558683+00:00",
+  "summary": {
+    "effective_kill_rate_percent": 100,
+    "exhaustive": true,
+    "finished_utc": "2026-11-02T20:22:12.516508+00:00",
+    "killed": 25,
+    "mutants": 110,
+    "proven_equivalent": 85,
+    "raw_kill_rate_percent": 23,
+    "survived": 85,
+    "unexplained_survivors": 0
+  },
+  "targets": [
+    "src/wad18.py",
+    "src/ledger.py",
+    "src/trade.py",
+    "src/settlement_engine.py"
+  ]
+}

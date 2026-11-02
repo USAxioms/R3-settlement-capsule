@@ -1,0 +1,153 @@
+[
+  {
+    "H_i": "5a7219d9e1efa495736ff68d74ac6619a072546371853e876d184728630df141",
+    "H_prev": "0000000000000000000000000000000000000000000000000000000000000000",
+    "S_i": {
+      "_label": "GENESIS",
+      "arithmetic": "WAD-18 exact integer \u2014 zero floating-point drift",
+      "capsule": "settlement-capsule",
+      "conservation_law": "total_supply(i) = constant \u2200 instrument i",
+      "initial_state_hash": "c6a3b0ecd07a49837d6f1dda2ec67c46738c2cfe16a05f6316b362bf5124fa25",
+      "initial_supplies": {
+        "AAPL": "1200000000000000000000",
+        "EUR": "130000000000000000000000",
+        "MSFT": "500000000000000000000",
+        "USD": "335000000000000000000000"
+      },
+      "network": "DISABLED \u2014 blockchain anchoring deferred",
+      "settlement_model": "Delivery vs Payment (DvP), atomic 4-leg execution",
+      "version": "1.0.0"
+    },
+    "T_i": "2026-11-02T10:12:10.747452+00:00",
+    "i": 0
+  },
+  {
+    "H_i": "cdaa376c01a4bd5e61d1deac5b4b3f8b5776c038d8d985b45decdebce1586092",
+    "H_prev": "5a7219d9e1efa495736ff68d74ac6619a072546371853e876d184728630df141",
+    "S_i": {
+      "_label": "alice_sells_aapl_to_bob",
+      "code": "SETTLED",
+      "conservation_ok": true,
+      "expected": "SETTLED",
+      "hash_after": "8aef6a44b01ff7d8",
+      "hash_before": "c6a3b0ecd07a4983",
+      "label": "alice_sells_aapl_to_bob",
+      "pass": true,
+      "settled": true,
+      "trade_id": "T001"
+    },
+    "T_i": "2026-11-02T10:12:10.747976+00:00",
+    "i": 1
+  },
+  {
+    "H_i": "b2dcde3b5736709d4887791ca8638acffc415a007f8877b334a4d10295b2dc0d",
+    "H_prev": "cdaa376c01a4bd5e61d1deac5b4b3f8b5776c038d8d985b45decdebce1586092",
+    "S_i": {
+      "_label": "bob_sells_msft_to_carol",
+      "code": "SETTLED",
+      "conservation_ok": true,
+      "expected": "SETTLED",
+      "hash_after": "62bf25c3531b35a3",
+      "hash_before": "8aef6a44b01ff7d8",
+      "label": "bob_sells_msft_to_carol",
+      "pass": true,
+      "settled": true,
+      "trade_id": "T002"
+    },
+    "T_i": "2026-11-02T10:12:10.748464+00:00",
+    "i": 2
+  },
+  {
+    "H_i": "e6f3810e7fbd6b095892f51b6a4265c148912704ee50ca0635a0532234c25427",
+    "H_prev": "b2dcde3b5736709d4887791ca8638acffc415a007f8877b334a4d10295b2dc0d",
+    "S_i": {
+      "_label": "fail_insufficient_seller",
+      "code": "FAILED_INSUFFICIENT_SELLER",
+      "conservation_ok": true,
+      "expected": "FAILED_INSUFFICIENT_SELLER",
+      "hash_after": "62bf25c3531b35a3",
+      "hash_before": "62bf25c3531b35a3",
+      "label": "fail_insufficient_seller",
+      "pass": true,
+      "settled": false,
+      "trade_id": "T003"
+    },
+    "T_i": "2026-11-02T10:12:10.749130+00:00",
+    "i": 3
+  },
+  {
+    "H_i": "c74102291e00c684f61372deabc47d14ecd2592b20fc5f498b5fa51dd39d262f",
+    "H_prev": "e6f3810e7fbd6b095892f51b6a4265c148912704ee50ca0635a0532234c25427",
+    "S_i": {
+      "_label": "dealer_converts_usd_to_eur",
+      "code": "SETTLED",
+      "conservation_ok": true,
+      "expected": "SETTLED",
+      "hash_after": "0a476cfe96d731a8",
+      "hash_before": "62bf25c3531b35a3",
+      "label": "dealer_converts_usd_to_eur",
+      "pass": true,
+      "settled": true,
+      "trade_id": "T004"
+    },
+    "T_i": "2026-11-02T10:12:10.749775+00:00",
+    "i": 4
+  },
+  {
+    "H_i": "46930cc2c732a57b0d6272cdd6f992037dcdb883b6d8c00e5f955750b75d74ce",
+    "H_prev": "c74102291e00c684f61372deabc47d14ecd2592b20fc5f498b5fa51dd39d262f",
+    "S_i": {
+      "_label": "fail_insufficient_buyer",
+      "code": "FAILED_INSUFFICIENT_BUYER",
+      "conservation_ok": true,
+      "expected": "FAILED_INSUFFICIENT_BUYER",
+      "hash_after": "0a476cfe96d731a8",
+      "hash_before": "0a476cfe96d731a8",
+      "label": "fail_insufficient_buyer",
+      "pass": true,
+      "settled": false,
+      "trade_id": "T005"
+    },
+    "T_i": "2026-11-02T10:12:10.750268+00:00",
+    "i": 5
+  },
+  {
+    "H_i": "f46cb6974415bfea6a9329819402a840a4948d5a1f21ee41864f73bb9807e15b",
+    "H_prev": "46930cc2c732a57b0d6272cdd6f992037dcdb883b6d8c00e5f955750b75d74ce",
+    "S_i": {
+      "_label": "carol_sells_eur_to_dealer",
+      "code": "SETTLED",
+      "conservation_ok": true,
+      "expected": "SETTLED",
+      "hash_after": "afe4dcee272e9518",
+      "hash_before": "0a476cfe96d731a8",
+      "label": "carol_sells_eur_to_dealer",
+      "pass": true,
+      "settled": true,
+      "trade_id": "T006"
+    },
+    "T_i": "2026-11-02T10:12:10.750895+00:00",
+    "i": 6
+  },
+  {
+    "H_i": "bea4e18dcc328658275e5aa6597e8a75af40b5ae1e22561552040a85a260ba9c",
+    "H_prev": "f46cb6974415bfea6a9329819402a840a4948d5a1f21ee41864f73bb9807e15b",
+    "S_i": {
+      "H_final": "f46cb6974415bfea6a9329819402a840a4948d5a1f21ee41864f73bb9807e15b",
+      "_label": "FINALIZATION",
+      "all_conserved": true,
+      "all_pass": true,
+      "final_hash": "afe4dcee272e951869d58a506a6baced232f2ad049ea2d2e2b3391277005e60e",
+      "n_failed": 2,
+      "n_settled": 4,
+      "supply_unchanged": {
+        "AAPL": true,
+        "EUR": true,
+        "MSFT": true,
+        "USD": true
+      }
+    },
+    "T_i": "2026-11-02T10:12:10.751494+00:00",
+    "i": 7
+  }
+]
