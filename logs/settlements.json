@@ -1,0 +1,94 @@
+{
+  "all_conserved": true,
+  "final_ledger": {
+    "ALICE|AAPL": 900000000000000000000,
+    "ALICE|EUR": 10000000000000000000000,
+    "ALICE|USD": 56500000000000000000000,
+    "BOB|AAPL": 100000000000000000000,
+    "BOB|MSFT": 450000000000000000000,
+    "BOB|USD": 65500000000000000000000,
+    "CAROL|AAPL": 200000000000000000000,
+    "CAROL|EUR": 25000000000000000000000,
+    "CAROL|MSFT": 50000000000000000000,
+    "CAROL|USD": 7500000000000000000000,
+    "DEALER|EUR": 95000000000000000000000,
+    "DEALER|USD": 205500000000000000000000
+  },
+  "results": [
+    {
+      "code": "SETTLED",
+      "conservation_ok": true,
+      "expected": "SETTLED",
+      "label": "alice_sells_aapl_to_bob",
+      "ledger_hash_after": "8aef6a44b01ff7d87bccb7d9b97b732d231d22cae17b664ef50745e7477d5424",
+      "ledger_hash_before": "c6a3b0ecd07a49837d6f1dda2ec67c46738c2cfe16a05f6316b362bf5124fa25",
+      "pass": true,
+      "settled": true,
+      "trade_id": "T001"
+    },
+    {
+      "code": "SETTLED",
+      "conservation_ok": true,
+      "expected": "SETTLED",
+      "label": "bob_sells_msft_to_carol",
+      "ledger_hash_after": "62bf25c3531b35a35e1b2270dfafedd66799510d39cf3ffea0e7ea6f37b6ad96",
+      "ledger_hash_before": "8aef6a44b01ff7d87bccb7d9b97b732d231d22cae17b664ef50745e7477d5424",
+      "pass": true,
+      "settled": true,
+      "trade_id": "T002"
+    },
+    {
+      "code": "FAILED_INSUFFICIENT_SELLER",
+      "conservation_ok": true,
+      "expected": "FAILED_INSUFFICIENT_SELLER",
+      "label": "fail_insufficient_seller",
+      "ledger_hash_after": "62bf25c3531b35a35e1b2270dfafedd66799510d39cf3ffea0e7ea6f37b6ad96",
+      "ledger_hash_before": "62bf25c3531b35a35e1b2270dfafedd66799510d39cf3ffea0e7ea6f37b6ad96",
+      "pass": true,
+      "settled": false,
+      "trade_id": "T003"
+    },
+    {
+      "code": "SETTLED",
+      "conservation_ok": true,
+      "expected": "SETTLED",
+      "label": "dealer_converts_usd_to_eur",
+      "ledger_hash_after": "0a476cfe96d731a8f3304df243b7282888bdfd0e40af5b98e2eb05ba2f91b7d0",
+      "ledger_hash_before": "62bf25c3531b35a35e1b2270dfafedd66799510d39cf3ffea0e7ea6f37b6ad96",
+      "pass": true,
+      "settled": true,
+      "trade_id": "T004"
+    },
+    {
+      "code": "FAILED_INSUFFICIENT_BUYER",
+      "conservation_ok": true,
+      "expected": "FAILED_INSUFFICIENT_BUYER",
+      "label": "fail_insufficient_buyer",
+      "ledger_hash_after": "0a476cfe96d731a8f3304df243b7282888bdfd0e40af5b98e2eb05ba2f91b7d0",
+      "ledger_hash_before": "0a476cfe96d731a8f3304df243b7282888bdfd0e40af5b98e2eb05ba2f91b7d0",
+      "pass": true,
+      "settled": false,
+      "trade_id": "T005"
+    },
+    {
+      "code": "SETTLED",
+      "conservation_ok": true,
+      "expected": "SETTLED",
+      "label": "carol_sells_eur_to_dealer",
+      "ledger_hash_after": "afe4dcee272e951869d58a506a6baced232f2ad049ea2d2e2b3391277005e60e",
+      "ledger_hash_before": "0a476cfe96d731a8f3304df243b7282888bdfd0e40af5b98e2eb05ba2f91b7d0",
+      "pass": true,
+      "settled": true,
+      "trade_id": "T006"
+    }
+  ],
+  "summary": {
+    "all_conserved": true,
+    "failed": 2,
+    "failed_buyer": 1,
+    "failed_seller": 1,
+    "settled": 4,
+    "settlement_rate_pct": 66,
+    "total_trades": 6
+  }
+}
