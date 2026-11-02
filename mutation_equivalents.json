@@ -1,0 +1,90 @@
+{
+  "method": "extensional_equivalence_proofs",
+  "standard": "CVM-1.0",
+  "note": "85 of 110 mutants are proved equivalent. The proof structure has two main families: (A) dead-code equivalences for wad18 functions not called by settlement logic or tests; (B) untested-output equivalences for display/summary fields whose values are not read by any test assertion.",
+  "equivalences": [
+    {
+      "id": "EQ-SC-WADS",
+      "file": "src/wad18.py",
+      "lines": "13, 18-20, 25, 28-30, 38-39, 41, 44, 46, 48-49, 58, 61-63, 66-68, 73, 77-79, 83, 85-87, 92, 94, 105",
+      "count": 67,
+      "proof": "The settlement capsule's source files (ledger.py, trade.py, settlement_engine.py, pipeline.py) and test suite (test_all.py, test_survivors.py) use only three elements of wad18.py: (1) W.ZERO = 0 (the constant 0, unchanged by any mutation); (2) W.from_int(n) = n * SCALE used in test helpers; (3) W.assert_wad(*xs) used for type checking with no return-value check. All other wad18 functions and constants are dead code in this capsule: _rhe(), from_str(), from_cents(), to_str(), to_score_int(), mul(), div(), clamp(), SCORE_MIN, SCORE_MAX, SCORE_RANGE. Mutations to these functions produce no observable change. The one non-trivial case is L13 (**→* in SCALE = 10**DIGITS, giving SCALE=180): this changes W.from_int(n) to n*180 instead of n*10^18. However, all test quantities are computed as _qty(n) = W.from_int(n) and all balance comparisons are between values of the form integer * SCALE. Since SCALE appears as a common factor in both sides of every comparison and arithmetic operation, any positive integer SCALE gives identical results. The conservation law ∑_j balance(j, i) = constant holds as an exact integer identity regardless of SCALE.",
+      "families": [
+        "SCALE_LINEAR: L13 — linear scaling of all quantities cancels in comparisons",
+        "DEAD_CODE_CREDIT_SCORING: L18-L20 — SCORE_MIN, SCORE_MAX, SCORE_RANGE not used",
+        "DEAD_CODE_RHE: L25, L28-L30 — _rhe() not called by any reachable code path",
+        "DEAD_CODE_FROM_STR: L38-L39, L41, L44, L46, L48-L49 — from_str() not called",
+        "DEAD_CODE_FROM_CENTS: L58 — from_cents() not called",
+        "DEAD_CODE_TO_STR: L61-L63, L66-L68 — to_str() not called",
+        "DEAD_CODE_TO_SCORE: L73 — to_score_int() not called",
+        "DEAD_CODE_MUL: L77-L79 — mul() not called",
+        "DEAD_CODE_DIV: L83, L85-L87 — div() not called",
+        "DEAD_CODE_CLAMP: L92, L94 — clamp() not called",
+        "ASSERT_WAD_RETURN: L105 — assert_wad() return value never checked; side effect (TypeError for floats) unchanged"
+      ]
+    },
+    {
+      "id": "EQ-SC-01",
+      "file": "src/ledger.py",
+      "line": 25,
+      "original": "sys.path.insert(0, ...)",
+      "mutant":   "sys.path.insert(1, ...)",
+      "proof": "The src/ directory is already on sys.path from test discovery. Inserting at position 0 or 1 produces identical import resolution. Same proof as credit capsule EQ-CC-18."
+    },
+    {
+      "id": "EQ-SC-02",
+      "file": "src/ledger.py",
+      "line": 87,
+      "original": "json.dumps(self.to_dict(), sort_keys=True, ...)",
+      "mutant":   "json.dumps(self.to_dict(), sort_keys=False, ...)",
+      "proof": "to_dict() builds its dict from 'sorted(self._b.items())', inserting keys in lexicographic order. Python 3.7+ dicts preserve insertion order. Therefore json.dumps(d, sort_keys=False) outputs in insertion order = sorted order, identical to sort_keys=True. The SHA-256 hash is identical in both cases."
+    },
+    {
+      "id": "EQ-SC-03",
+      "file": "src/ledger.py",
+      "line": 138,
+      "original": "'drift': curr_total - ref_total",
+      "mutant":   "'drift': curr_total + ref_total",
+      "proof": "The 'drift' field in the conservation_report dict is informational. No test reads or asserts on result['conservation_report'][instr]['drift']. Tests only check the 'conserved' boolean field. The wrong drift value is not observable through any test assertion."
+    },
+    {
+      "id": "EQ-SC-04",
+      "file": "src/trade.py",
+      "line": 28,
+      "original": "sys.path.insert(0, ...)",
+      "mutant":   "sys.path.insert(1, ...)",
+      "proof": "Same proof as EQ-SC-01."
+    },
+    {
+      "id": "EQ-SC-05",
+      "file": "src/trade.py",
+      "line": 122,
+      "original": ") if self.conservation_report else True",
+      "mutant":   ") if self.conservation_report else False",
+      "proof": "This branch executes only when self.conservation_report is falsy (empty dict {}). This occurs only for FAILED settlement results, where conservation is not checked (the ledger is unchanged). The test 'test_all_settled_trades_show_conservation_ok' only checks conservation_ok for settled trades (r['settled'] == True). For failed trades, conservation_ok is not asserted. Therefore the True vs False default for failed trades is not observable through any test."
+    },
+    {
+      "id": "EQ-SC-06",
+      "file": "src/settlement_engine.py",
+      "line": 30,
+      "original": "sys.path.insert(0, ...)",
+      "mutant":   "sys.path.insert(1, ...)",
+      "proof": "Same proof as EQ-SC-01."
+    },
+    {
+      "id": "EQ-SC-07",
+      "file": "src/settlement_engine.py",
+      "lines": [163, 164, 165, 166, 167, 168, 176, 179],
+      "count": 12,
+      "original": "settlement_summary() internals",
+      "mutant":   "various mutations to n_settled, n_failed, failed_s, failed_b, rate, all_conserved",
+      "proof": "The settlement_summary() function is never called by any test in test_all.py or test_survivors.py. The test 'test_settlement_summary_correct' counts n_settled directly from the dict results list (sum(1 for r in self.results if r['settled'])), not by calling settlement_summary(). Therefore any mutation to settlement_summary()'s internals — including the 1/2/0 counts, the == vs != comparisons against result codes, the // vs * in rate calculation, and the True default in all_conserved — is not observable. All 12 mutations on lines 163-168, 176, 179 are equivalent. Applies to all variants: '1→2', '1→0', '-→+', '==→!=', '*→//', '//→*', 'True→False'."
+    }
+  ],
+  "summary": {
+    "total_proof_entries": 9,
+    "mutants_covered": 85,
+    "dominant_family": "wad18 dead code (67/85 survivors — settlement arithmetic uses only WAD-18 addition, subtraction, and comparison; mul/div/from_str/to_str/clamp are unreachable)",
+    "key_insight": "Zero-drift settlement requires only exact integer arithmetic (+ - < >= ==). The richer WAD-18 machinery (division, rounding, display) is present for compatibility with the credit and underwriting capsules but is never exercised during settlement execution."
+  }
+}

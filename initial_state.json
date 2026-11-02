@@ -1,0 +1,67 @@
+{
+  "participants": ["ALICE", "BOB", "CAROL", "DEALER"],
+  "instruments":  ["AAPL", "MSFT", "USD", "EUR"],
+
+  "initial_balances": [
+    {"participant": "ALICE",  "instrument": "AAPL", "quantity_units": 1000},
+    {"participant": "ALICE",  "instrument": "USD",  "quantity_units": 50000},
+    {"participant": "BOB",    "instrument": "MSFT", "quantity_units": 500},
+    {"participant": "BOB",    "instrument": "USD",  "quantity_units": 75000},
+    {"participant": "CAROL",  "instrument": "AAPL", "quantity_units": 200},
+    {"participant": "CAROL",  "instrument": "EUR",  "quantity_units": 30000},
+    {"participant": "CAROL",  "instrument": "USD",  "quantity_units": 10000},
+    {"participant": "DEALER", "instrument": "USD",  "quantity_units": 200000},
+    {"participant": "DEALER", "instrument": "EUR",  "quantity_units": 100000}
+  ],
+
+  "trades": [
+    {
+      "trade_id": "T001",
+      "label": "alice_sells_aapl_to_bob",
+      "seller": "ALICE", "buyer": "BOB",
+      "sell_instrument": "AAPL", "sell_quantity_units": 100,
+      "buy_instrument":  "USD",  "buy_quantity_units":  17500,
+      "expected_result": "SETTLED"
+    },
+    {
+      "trade_id": "T002",
+      "label": "bob_sells_msft_to_carol",
+      "seller": "BOB",   "buyer": "CAROL",
+      "sell_instrument": "MSFT", "sell_quantity_units": 50,
+      "buy_instrument":  "USD",  "buy_quantity_units":  8000,
+      "expected_result": "SETTLED"
+    },
+    {
+      "trade_id": "T003",
+      "label": "fail_insufficient_seller",
+      "seller": "CAROL", "buyer": "ALICE",
+      "sell_instrument": "AAPL", "sell_quantity_units": 500,
+      "buy_instrument":  "USD",  "buy_quantity_units":  87500,
+      "expected_result": "FAILED_INSUFFICIENT_SELLER"
+    },
+    {
+      "trade_id": "T004",
+      "label": "dealer_converts_usd_to_eur",
+      "seller": "DEALER", "buyer": "ALICE",
+      "sell_instrument": "EUR", "sell_quantity_units": 10000,
+      "buy_instrument":  "USD", "buy_quantity_units":  11000,
+      "expected_result": "SETTLED"
+    },
+    {
+      "trade_id": "T005",
+      "label": "fail_insufficient_buyer",
+      "seller": "ALICE", "buyer": "BOB",
+      "sell_instrument": "AAPL", "sell_quantity_units": 100,
+      "buy_instrument":  "USD",  "buy_quantity_units":  500000,
+      "expected_result": "FAILED_INSUFFICIENT_BUYER"
+    },
+    {
+      "trade_id": "T006",
+      "label": "carol_sells_eur_to_dealer",
+      "seller": "CAROL", "buyer": "DEALER",
+      "sell_instrument": "EUR", "sell_quantity_units": 5000,
+      "buy_instrument":  "USD", "buy_quantity_units":  5500,
+      "expected_result": "SETTLED"
+    }
+  ]
+}
